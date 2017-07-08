@@ -1,14 +1,16 @@
 # HangulTutor
-Short description and motivation.
+Game for learning korean hangul alphabet. I've not found a trainer I'd like so I made my own. 
 
 ## Usage
-How to use my plugin.
+It shows a random word from korean dictionary and you shold write a transcription. Then you can view a correct answer and analize your mistakes. 
 
 ## Installation
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'hangul-tutor'
+gem 'korean-string'
+gem 'hangul', git: 'https://github.com/aelaa/hangul.git'
+gem 'hangul-tutor', git: 'https://github.com/fpaint/hangul_tutor.git'
 ```
 
 And then execute:
@@ -16,13 +18,16 @@ And then execute:
 $ bundle
 ```
 
-Or install it yourself as:
+Mount the engine to your routes.rb:
 ```bash
-$ gem install hangul-tutor
+mount HangulTutor::Engine => "/"
 ```
 
-## Contributing
-Contribution directions go here.
+## Acknowledgments
+* React!
+* Gems hangul and korean-string. They made a half. 
+* Korean words dictionary from here - https://www.topikguide.com/6000-most-common-korean-words-1. They made other half.
+* Beautiful font Jeju Myeongjo.
 
 ## License
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
