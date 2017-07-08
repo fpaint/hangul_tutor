@@ -1,0 +1,3 @@
+.main
+  - word = HangulTutor::Word.get_random  
+  = react_component 'HangulTutor', {word: word.json}

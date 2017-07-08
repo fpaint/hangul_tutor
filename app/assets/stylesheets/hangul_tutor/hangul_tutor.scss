@@ -1,0 +1,95 @@
+@import url(http://fonts.googleapis.com/earlyaccess/jejumyeongjo.css);
+
+body.hangul {
+  background: url(image_path('hangul_tutor/wallpaper.jpg'));
+  background-size: cover;
+}
+
+.main {
+  max-width: 960px;
+  margin: 0 auto;
+  font-size: 14pt;
+  height: 100%;
+}
+
+.hangul_tutor {
+  padding: 2em;
+
+  height: 90vh;
+  max-height: 100%;
+  background: rgba(255,255,255,0.4);
+
+  .word {
+    font-family: 'Jeju Myeongjo', serif;
+    font-size: 600%;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .translation {
+    font-style: italic;
+    text-align: center;
+    padding: 1em; 
+  }
+
+  .form {
+    width: 20em;
+    margin: 2em auto 1em;
+    label {
+      display: block;
+      font-size: 80%;
+      color: gray;
+      padding-left: 0.9em;
+      margin-bottom: 0.2em;
+    }
+    input {
+      padding: 0.3em 0.5em;
+      font-family: serif;
+      font-size: 120%;
+      outline: none;       
+    }
+    button {
+      margin: 1em;
+      border-radius: 50%;
+      height: 3em;
+      width: 3em;
+      vertical-align: 0.3em;
+      outline: none;
+      cursor: pointer;
+    }
+  }
+
+  .answer {
+    width: 20em;
+    margin: 0 auto;
+    em {
+      font-weight: bold;
+    }
+    .link {
+      margin-top: 1em;
+      text-align: center;
+      color: red;
+      cursor: pointer;
+      text-decoration: underline;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.chars_help {
+  font-size: 80%;  
+  float: right;
+  opacity: 0.1;
+  cursor: default;
+  &:hover {
+    opacity: 1;
+  }
+  ul {
+    list-style: none;
+  }
+  li {    
+    margin-right: 1em;
+  }
+}
